@@ -1,0 +1,51 @@
+Container
+    - Contains configurations 
+        - Contracts 
+            : staffing - {
+                name : "staffing",
+                path: 
+            }
+    
+
+
+
+        
+
+
+- Prod:
+    Container - runs on www.cts.com
+    addContract({
+        "containerHost": "www.cts.com",
+        config: {
+            path: "/staffing-new"
+        }
+    })
+
+
+changeContract ----> localhost:3000/container-change-contract =========> 
+
+How does and app bootstrap 
+    - App
+        - Router
+            - Browse(props: 'name')
+                - Microfrontend()
+    - App
+        - 
+
+
+
+Contracts - Host this built JSON somewhere: 
+    : staffing/
+        Prod
+        Dev
+        Test
+    : e2e/
+        Prod
+        Dev
+        Test
+
+Container:
+    : if(env = "development") 
+        getDevelopmentContracts();
+    : create routes for each of them();
+    : render App
