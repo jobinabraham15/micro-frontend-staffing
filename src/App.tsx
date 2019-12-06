@@ -9,7 +9,7 @@ const App: React.FC<{ history: any }> = ({ history }) => {
   return (
     <Router history={history || defaultHistory}>
         <Switch>
-          <Route exact path="/browse/main" component={Main} />
+          <Route exact path="/staffing/main" component={Main} />
         </Switch>
     </Router>
   );
